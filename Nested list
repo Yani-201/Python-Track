@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    li=[]
+    sc=[]
+    names=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        
+        a=[name,score]
+        li.append(a)
+        a=[]
+        if score not in sc:
+            sc.append(score)
+    sc.sort()
+   
+    for i in li:
+        if i[1] == sc[1]: names.append(i[0])
+    names.sort()
+    for j in names: print(j)
+            
