@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    s=set()
+    for _ in range(int(input())):
+        name = input()
+        s.add(name)
+    print(len(s))
