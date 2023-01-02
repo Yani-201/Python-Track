@@ -1,0 +1,15 @@
+n = int(input())
+s = set(map(int, input().split()))
+N = int(input())
+    
+for _ in range(N):
+        inp = input().split()   
+        if inp[0] != "pop":
+            arg = "("+ ",".join(inp[1:]) +")"
+            op = inp[0]+arg
+            eval("s."+op)
+        else:
+            s.pop()
+sum=0
+for i in s: sum+=i
+print(sum)
