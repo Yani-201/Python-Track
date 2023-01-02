@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    N = int(input())
+    li=[]
+    
+    for _ in range(N):
+        inp = input().split()   
+        if inp[0] != "print":
+            arg = "("+ ",".join(inp[1:]) +")"
+            op = inp[0]+arg
+            eval("li."+op)
+        else:
+            print(li)
