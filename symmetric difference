@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    m=int(input())
+    M = set(list(map(int, input().split())))
+    n=int(input())
+    N = set(list(map(int, input().split())))
+    Z=(M.difference(N)).union(N.difference(M))
+    li=list(Z)
+    li.sort()
+    for j in li: print(j)
