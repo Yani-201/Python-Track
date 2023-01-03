@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    m = list(map(int, input().split()))
+    X = list(map(int, input().split()))
+    M = set(list(map(int, input().split())))
+    N = set(list(map(int, input().split())))
+    ct=0
+    for i in X:
+        if i in M:ct+=1
+        elif i in N: ct-=1
+    print(ct)
+        
