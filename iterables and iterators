@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from itertools import *
+    N = int(input())
+    li = list(input().split())
+    k = int(input())
+
+    z=list(combinations(li,k))
+    ct=0
+    for s in z:
+        if 'a' in s: ct+=1
+    print(round(float(ct/len(z)),3))
+    
