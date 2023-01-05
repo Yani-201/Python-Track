@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from itertools import groupby
+    m=input()
+    for i,j in groupby(map(int,list(m))):
+        print(tuple([len(list(j)), i]), end=" ")
