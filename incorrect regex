@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    import re
+    a=int(input())
+    for i in range(a):
+        try:
+            re.compile(input())
+            Output = True
+        except re.error:
+            Output = False
+    
+        print(Output)
+    
