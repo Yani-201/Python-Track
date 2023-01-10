@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from collections import Counter
+    a=int(input())
+    li=list(map(int,input().split()))
+    av=Counter(li)
+    b=int(input())
+    tot=0
+    for i in range(b):
+        x=list(map(int,input().split()))
+        if (x[0] in av.keys()) and av[x[0]] !=0:
+            tot+=x[1]
+            av[x[0]]-=1
+    print(tot)
